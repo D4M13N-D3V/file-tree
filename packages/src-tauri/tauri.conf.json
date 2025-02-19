@@ -1,13 +1,13 @@
 {
   "package": {
-    "productName": "tauri-app-template",
+    "productName": "file-tree",
     "version": "0.1.0"
   },
   "build": {
     "distDir": "../src-renderer/dist",
     "devPath": "http://localhost:8080",
-    "beforeDevCommand": "yarn dev:renderer",
-    "beforeBuildCommand": "yarn build:renderer",
+    "beforeDevCommand": "npm run dev:renderer",
+    "beforeBuildCommand": "npm run build:renderer",
     "withGlobalTauri": true
   },
   "tauri": {

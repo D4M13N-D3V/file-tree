@@ -10,13 +10,13 @@
     "packages/src-renderer"
   ],
   "scripts": {
-    "dev": "cd packages && tauri dev",
-    "build": "cd packages && tauri build",
-    "dev:renderer": "cd packages/src-renderer && yarn dev",
-    "build:renderer": "cd packages/src-renderer && yarn build",
+    "dev": "cd packages && npx tauri dev",
+    "build": "cd packages && npx tauri build",
+    "dev:renderer": "cd packages/src-renderer && npm run dev",
+    "build:renderer": "cd packages/src-renderer && npm run build",
     "lint": "cd packages/src-renderer && yarn lint",
     "icons": "cd packages && tauri icon src-tauri/app-icon.png",
-    "tauri": "cd packages && tauri"
+    "tauri": "cd packages && npx tauri"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.6.2",
