@@ -11,6 +11,21 @@
     "withGlobalTauri": true
   },
   "tauri": {
+    "cli": {
+      "description": "This is a tool for getting the storage breakdown by folder.", 
+      "longDescription": "This is a tool that will tell you how much storage is used in each folder and visualize it in a easy way via CLI and GUI.",
+      "beforeHelp": "This is created by Damien Ostler.",
+      "afterHelp": "Thank you for reading!", 
+      "args": [
+        {
+          "name": "path",
+          "index": 1,
+          "takesValue": true
+        }
+      ], 
+      "subcommands": {
+      }
+    },
     "bundle": {
       "active": true,
       "targets": "all",
@@ -51,13 +66,6 @@
       "all": true
     },
     "windows": [
-      {
-        "title": "Tauri App Template",
-        "width": 800,
-        "height": 600,
-        "resizable": true,
-        "fullscreen": false
-      }
     ],
     "security": {
       "csp": "default-src blob: data: filesystem: ws: http: https: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
